@@ -97,3 +97,4 @@ Help Hydrodactyl grow by supporting the project:
 - [Donate to Blueprint Framework](https://bpfw.io/donate): Support the nonprofit funding Hydrodactyl.
 - [Join the Discord](https://discord.gg/sK686yHdaK): Chat with the community and get support.
 - **Star the repository**: Share it with others to help more people discover Hydrodactyl.
+
