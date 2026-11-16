@@ -166,6 +166,7 @@ jobs:
       - name: Create panel.tar.gz
         run: |
           tar -czf panel.tar.gz \
+            --exclude='panel.tar.gz' \
             --exclude='*/.*' \
             --exclude='node_modules' \
             --exclude='tests' \
