@@ -15,6 +15,8 @@ class LogoControllerTest extends IntegrationTestCase
 
     public function testBrandingPageRespondsOk(): void
     {
+        $this->withoutVite();
+
         $user = User::factory()->admin()->create();
 
         $this->actingAs($user)->get('/admin/settings/logo')->assertOk();
@@ -120,6 +122,8 @@ class LogoControllerTest extends IntegrationTestCase
 
     public function testCustomLogoRendersOnlyCustomFaviconLinks(): void
     {
+        $this->withoutVite();
+
         Storage::fake('public');
         Storage::disk('public')->put('logo/test.webp', 'fake-image-content');
 
@@ -138,6 +142,8 @@ class LogoControllerTest extends IntegrationTestCase
 
     public function testNoCustomLogoRendersStaticFaviconLinks(): void
     {
+        $this->withoutVite();
+
         Storage::fake('public');
 
         config(['app.logo.type' => null, 'app.logo.value' => null]);

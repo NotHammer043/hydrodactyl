@@ -6,7 +6,7 @@ interface LoginData {
     [key: string]: unknown; // Allow additional fields like captcha responses
 }
 
-interface LoginResponse {
+export interface LoginResponse {
     complete: boolean;
     intended?: string;
     confirmationToken?: string;

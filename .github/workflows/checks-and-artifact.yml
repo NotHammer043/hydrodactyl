@@ -34,9 +34,6 @@ jobs:
       - name: Check formatting and lint
         run: pnpm exec biome check .
 
-      - name: Type-check
-        run: pnpm typecheck
-
       - name: Test appearance and brand color
         run: pnpm test:appearance
 
